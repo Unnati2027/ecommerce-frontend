@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Urban Hoodie",
+        "image": "assets/product1.jpeg",
+        "originalPrice": 1499,
+        "discount": 0.2
+    },
+    {
+        "name": "Minimalist Planter",
+        "image": "assets/product2.jpeg",
+        "originalPrice": 999,
+        "discount": 0.2
+    },
+    {
+        "name": "Wireless Earphones",
+        "image": "assets/product3.jpeg",
+        "originalPrice": 2299,
+        "discount": 0.2
+    },
+    {
+        "name": "Stylish Backpack",
+        "image": "assets/product4.jpeg",
+        "originalPrice": 1799,
+        "discount": 0.2
+    },
+    {
+        "name": "Trendy Sunglasses",
+        "image": "assets/product5.jpeg",
+        "originalPrice": 2499,
+        "discount": 0.2
+    },
+    {
+        "name": "Scented Candle Set",
+        "image": "assets/product6.jpeg",
+        "originalPrice": 1299,
+        "discount": 0.2
+    }
+]
