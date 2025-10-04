@@ -322,8 +322,9 @@ header nav {
     max-width: 400px;
     border-radius: 10px;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, transform-origin 0.2s ease;
     cursor: zoom-in;
+    will-change: transform;
 }
 
 .product-images img:hover {
@@ -467,8 +468,10 @@ header nav {
 .lightbox-content {
     margin: auto;
     display: block;
-    max-width: 90%;
-    max-height: 80%;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    object-fit: contain;
     border-radius: 10px;
 }
 
@@ -548,5 +551,14 @@ header nav {
 
     .product-info button.cta-btn {
         width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .product-images img:hover {
+        transform: none; /* disable hover zoom */
+    }
+
+    .product-images img {
+        cursor: pointer; /* tap to open lightbox */
     }
 }
