@@ -1,38 +1,56 @@
 [
     {
-        "name": "Urban Hoodie",
-        "image": "assets/product1.jpeg",
-        "originalPrice": 1499,
-        "discount": 0.2
+        "id": 1,
+        "title": "Urban Hoodie",
+        "description": "A cozy hoodie for casual wear and comfort.",
+        "price": 1499,
+        "discountedPrice": 1199,
+        "discount": 20,
+        "image": "assets/product1.jpeg"
     },
     {
-        "name": "Minimalist Planter",
-        "image": "assets/product2.jpeg",
-        "originalPrice": 999,
-        "discount": 0.2
+        "id": 2,
+        "title": "Minimalist Planter",
+        "description": "Elegant planter for home and office decoration.",
+        "price": 999,
+        "discountedPrice": 799,
+        "discount": 20,
+        "image": "assets/product2.jpeg"
     },
     {
-        "name": "Wireless Earphones",
-        "image": "assets/product3.jpeg",
-        "originalPrice": 2299,
-        "discount": 0.2
+        "id": 3,
+        "title": "Wireless Earphones",
+        "description": "High-quality earphones with noise cancellation.",
+        "price": 2299,
+        "discountedPrice": 1839,
+        "discount": 20,
+        "image": "assets/product3.jpeg"
     },
     {
-        "name": "Stylish Backpack",
-        "image": "assets/product4.jpeg",
-        "originalPrice": 1799,
-        "discount": 0.2
+        "id": 4,
+        "title": "Stylish Backpack",
+        "description": "Spacious and durable backpack for everyday use.",
+        "price": 1799,
+        "discountedPrice": 1439,
+        "discount": 20,
+        "image": "assets/product4.jpeg"
     },
     {
-        "name": "Trendy Sunglasses",
-        "image": "assets/product5.jpeg",
-        "originalPrice": 2499,
-        "discount": 0.2
+        "id": 5,
+        "title": "Trendy Sunglasses",
+        "description": "UV-protected sunglasses with a modern design.",
+        "price": 2499,
+        "discountedPrice": 1999,
+        "discount": 20,
+        "image": "assets/product5.jpeg"
     },
     {
-        "name": "Scented Candle Set",
-        "image": "assets/product6.jpeg",
-        "originalPrice": 1299,
-        "discount": 0.2
+        "id": 6,
+        "title": "Scented Candle Set",
+        "description": "Fragrant candle set to create a relaxing atmosphere.",
+        "price": 1299,
+        "discountedPrice": 1039,
+        "discount": 20,
+        "image": "assets/product6.jpeg"
     }
 ]

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Urban Attic</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container" id="logo-container">
+                <img src="assets/logo.png" alt="Logo" class="logo" id="logo">
+                <span class="company-name">Urban Attic</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#products-section">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="header-right">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count"></span>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <div class="product-container">
+            <div class="product-images">
+                <img id="main-product-image" src="" alt="Product Image">
+            </div>
+
+            <div class="product-info">
+                <h1 id="product-title"></h1>
+                <p id="product-description"></p>
+
+                <div class="price">
+                    <span class="original-price" id="original-price"></span>
+                    <span class="discounted-price" id="discounted-price"></span>
+                    <span class="discount-tag" id="discount-tag"></span>
+                </div>
+
+                <div class="variations">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select"></select>
+
+                    <label for="color-select">Color:</label>
+                    <select id="color-select"></select>
+                </div>
+
+                <div class="quantity-selector">
+                    <button id="decrease-qty">−</button>
+                    <span id="quantity">1</span>
+                    <button id="increase-qty">+</button>
+                </div>
+
+                <div class="total-price">
+                    Total: <span id="total-price"></span>
+                </div>
+
+                <button id="add-to-cart" class="cta-btn">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="scripts/product.js"></script>
+</body>
+</html>
