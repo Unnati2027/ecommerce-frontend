@@ -24,10 +24,12 @@
 
             <div class="header-right">
                 <input type="text" placeholder="Search..." class="search-bar">
-                <div class="cart-icon">
+                
+                <!-- ✅ FIX: made cart icon clickable -->
+                <a href="cart.html" class="cart-icon">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count"></span>
-                </div>
+                </a>
             </div>
 
             <div class="hamburger">
@@ -83,5 +85,18 @@
     </div>
 
     <script src="scripts/product.js"></script>
+
+    <!-- ✅ Optional: keeps cart count accurate on page load -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cartCountEl = document.querySelector('.cart-count');
+        if (!cartCountEl) return;
+
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCountEl.style.display = count > 0 ? 'inline-block' : 'none';
+        cartCountEl.textContent = count;
+    });
+    </script>
 </body>
 </html>
