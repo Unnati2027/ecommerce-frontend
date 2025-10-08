@@ -730,3 +730,43 @@ header nav {
     text-align: center;
   }
 }
+.checkout-page {
+  padding: 40px;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.checkout-details,
+.order-summary {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-details {
+  flex: 1 1 55%;
+}
+
+.order-summary {
+  flex: 1 1 35%;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}

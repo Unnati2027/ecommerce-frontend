@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe8e8, #fff3f3);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .thankyou-container {
+      background: white;
+      padding: 50px 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      max-width: 550px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #ff416c;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #333;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .order-details {
+      text-align: left;
+      background: #fff7f7;
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .redirect {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    .redirect span {
+      font-weight: 600;
+      color: #ff416c;
+    }
+
+    @media (max-width: 600px) {
+      .thankyou-container {
+        padding: 30px;
+        margin: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <h1>Thank You for Your Order!</h1>
+    <p>Your order has been placed successfully 🎉</p>
+    <div id="orderDetails" class="order-details"></div>
+    <p class="redirect">Redirecting you to <span>Home</span> in 5 seconds...</p>
+  </div>
+
+  <script>
+    const detailsContainer = document.getElementById("orderDetails");
+    const order = JSON.parse(localStorage.getItem("orderDetails"));
+
+    if (order) {
+      detailsContainer.innerHTML = `
+        <strong>Order Summary:</strong><br>
+        🧍 Name: ${order.name}<br>
+        📧 Email: ${order.email}<br>
+        📞 Phone: ${order.phone}<br>
+        📍 Address: ${order.address}, ${order.city} - ${order.postal}<br>
+        💳 Payment Method: ${order.paymentMethod.toUpperCase()}<br>
+        🕒 Order Date: ${order.date}
+      `;
+    } else {
+      detailsContainer.innerHTML = `<em>No order details found.</em>`;
+    }
+
+    // Redirect to home after 5 seconds
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 5000);
+  </script>
+</body>
+</html>
